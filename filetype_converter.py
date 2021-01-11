@@ -6,7 +6,7 @@ def convert (old, new):
 	print("."+ old)
 	for file in files:
 		if file.endswith("."+ old):
-			file_parts = file.split(".")
+			file_parts = file.split("." + old)
 			os.rename(file, file_parts[0] + "." + new)
 	
 
